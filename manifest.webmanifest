@@ -1,0 +1,23 @@
+{
+    "short_name": "Payplay",
+    "name": "Payplay: play with payments!",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+        {
+        "src": "/img/icon.svg",
+        "type": "image/svg+xml",
+        "sizes": "512x512"
+        },
+        {
+        "src": "/img/icon_192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+        },
+        {
+        "src": "/img/icon_512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+        }
+    ]
+}

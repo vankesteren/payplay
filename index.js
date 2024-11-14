@@ -30,6 +30,8 @@ async function main() {
       const ndef = new NDEFReader();
       await ndef.scan();
       log("Starting...");
+      changeColor();
+      showAmount();
       ndef.addEventListener("readingerror", () => {
         log("Card could not be read.");
         processTransaction()
