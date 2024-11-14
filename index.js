@@ -5,7 +5,7 @@ const fgcols = ["white", "white", "white", "black", "black", "white", "white", "
 const euros = ["21", "15", "1", "1", "3", "3", "2", "7", "14", "9", "8"]
 const cents = ["50", "95", "20", "00", "01", "41", "50", "95", "99", "00"];
 
-function log(message) {logging.innerHTML += `<p>${message}</p>`};
+function log(message) {logging.innerHTML = `<p>${message}</p>`};
 function changeColor() {
   let idx = Math.floor(Math.random() * fgcols.length);
   document.documentElement.style.setProperty('--base-color', bgcols[idx]);
