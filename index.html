@@ -21,5 +21,15 @@
         </div>
     </div>
     
+    <script>
+        if (navigator.serviceWorker) {
+          navigator.serviceWorker.register (
+            '/payplay/sw.js',
+            {scope: '/payplay/'}
+          )
+        }
+    </script>
 </body>
+
+
 </html>
