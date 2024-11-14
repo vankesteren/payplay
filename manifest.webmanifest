@@ -1,8 +1,9 @@
 {
     "short_name": "Payplay",
     "name": "Payplay: play with payments!",
-    "display": "standalone",
-    "start_url": "/",
+    "display": "fullscreen",
+    "scope": "/payplay/",
+    "start_url": "/payplay/",
     "icons": [
         {
         "src": "/img/icon.svg",
