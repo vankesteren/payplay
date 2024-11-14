@@ -2,7 +2,8 @@ const delay = (ms) => new Promise(res => setTimeout(res, ms));
 const bgcols = ["red", "green", "blue", "pink", "orange", "purple", "magenta", "yellow"];
 const fgcols = ["white", "white", "white", "black", "black", "white", "white", "black"];
 
-const amounts = ["21,50", "3,95", "6,20", "4,00", "18,01", "33,41", "15,50", "1,95"];
+const euros = ["21", "15", "1", "1", "3", "3", "2", "7", "14", "9", "8"]
+const cents = ["50", "95", "20", "00", "01", "41", "50", "95", "99", "00"];
 
 function log(message) {logging.innerHTML += `<p>${message}</p>`};
 function changeColor() {
@@ -11,8 +12,9 @@ function changeColor() {
   document.documentElement.style.setProperty('--contrast-color', fgcols[idx]);
 }
 function showAmount() {
-  let idx = Math.floor(Math.random() * amounts.length);
-  content.innerHTML = `€${amounts[idx]}`
+  let idx1 = Math.floor(Math.random() * euros.length);
+  let idx2 = Math.floor(Math.random() * cents.length);
+  content.innerHTML = `€${euros[idx1]},${cents[idx2]}`
 }
 
 async function processTransaction() {
