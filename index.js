@@ -35,11 +35,11 @@ async function main() {
       showAmount();
       log("Your card please!");
       ndef.addEventListener("readingerror", () => {
-        log("Card read..");
+        log("Card read!");
         processTransaction()
       });
       ndef.addEventListener("reading", ({ message, serialNumber }) => {
-        log(`SN: ${serialNumber}, ${message.records[0]}`);
+        log(`Card ID: ${serialNumber}`);
         processTransaction()
       });
     }
