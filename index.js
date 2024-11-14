@@ -18,10 +18,11 @@ function showAmount() {
 }
 
 async function processTransaction() {
-  content.innerHTML = "THANK YOU!"
-  changeColor()
-  await delay(2000)
-  showAmount()
+  content.innerHTML = "THANK YOU!";
+  changeColor();
+  await delay(2000);
+  showAmount();
+  log("Your card please!");
 }
 
 async function main() {
@@ -32,13 +33,13 @@ async function main() {
       log("Starting...");
       changeColor();
       showAmount();
+      log("Your card please!");
       ndef.addEventListener("readingerror", () => {
-        log("Card could not be read.");
+        log("Card read..");
         processTransaction()
       });
       ndef.addEventListener("reading", ({ message, serialNumber }) => {
-        log(`> Serial Number: ${serialNumber}`);
-        log(`> Records: (${message.records.length})`);
+        log(`SN: ${serialNumber}, ${message.records[0]}`);
         processTransaction()
       });
     }
