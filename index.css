@@ -15,7 +15,7 @@ body {
     background-image: url("assets/nfc.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 90%;
 }
 
 #maintitle {
@@ -27,6 +27,7 @@ body {
 }
 
 #content {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     max-width: 40rem;
