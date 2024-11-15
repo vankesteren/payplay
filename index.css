@@ -11,6 +11,11 @@ body {
     font-weight: 900;
     background-color: var(--base-color);
     color: var(--contrast-color);
+    user-select: none;
+    background-image: url("assets/nfc.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
 }
 
 #maintitle {
@@ -41,7 +46,7 @@ body {
 
 #logging {
     height: 3rem;
-    margin-top: -3rem;
+    margin-top: 3rem;
     text-align: center;
 }
 

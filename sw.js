@@ -8,7 +8,7 @@ var APP_PREFIX = 'payplay_';
 // you need to change this version (version_01, version_02…). 
 // If you don't change the version, the service worker will give your
 // users the old files!
-var VERSION = 'version_02';
+var VERSION = 'version_03';
 
 // The files to make available for offline use. make sure to add 
 // others to this list
@@ -16,5 +16,7 @@ var URLS = [
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
   `${GHPATH}/index.css`,
-  `${GHPATH}/index.js`
+  `${GHPATH}/index.js`,
+  `${GHPATH}/assets/cash-register-kaching-sound-effect-125042.mp3`
+  `${GHPATH}/assets/nfc.svg`
 ]
