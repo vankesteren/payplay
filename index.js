@@ -23,7 +23,7 @@ kachingelement.playbackRate = 1.7;
 const delay = (ms) => new Promise(res => setTimeout(res, ms));
 
 // A message log that prints to the bottom of the screen
-function log(message) {logging.innerHTML = `<p>${message}</p>`};
+function log(message) { logging.innerHTML = `<p>${message}</p>` };
 
 // Change to random background color and associated contrasting text color
 function changeColor() {
@@ -50,30 +50,30 @@ async function processTransaction() {
     showAmount();
     log("Your card please!");
     PROCESSING = false;
-  } 
+  }
 }
 
 // The main async function
 async function main() {
-    try {
-      const ndef = new NDEFReader();
-      await ndef.scan();
-      log("Starting...");
-      changeColor();
-      showAmount();
-      log("Your card please!");
-      ndef.addEventListener("readingerror", async () => {
-        log("Card read!");
-        await processTransaction();
-      });
-      ndef.addEventListener("reading", async ({ message, serialNumber }) => {
-        log(`Card ID: ${serialNumber}`);
-        await processTransaction();
-      });
-    }
-    catch (error) {
-      log("Error! " + error);
-    }
+  try {
+    const ndef = new NDEFReader();
+    await ndef.scan();
+    log("Starting...");
+    changeColor();
+    showAmount();
+    log("Your card please!");
+    ndef.addEventListener("readingerror", async () => {
+      log("Card read!");
+      await processTransaction();
+    });
+    ndef.addEventListener("reading", async ({ message, serialNumber }) => {
+      log(`Card ID: ${serialNumber}`);
+      await processTransaction();
+    });
+  }
+  catch (error) {
+    log("Error! " + error);
+  }
 }
 
 // fallback / debug
