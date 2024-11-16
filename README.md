@@ -19,3 +19,7 @@ This only works on Android devices with Google Chrome.
 2. Press the three dots (⋮) in the top-right corner
 3. Click "add to home screen"
 4. Select the option to install the app
+
+### Usage
+
+Simply press "start" and start paying. Hold the NFC-enabled card up to the NFC chip in your phone. This will trigger the payment! The optimal location is likely on the back of your phone, see e.g., [this article](https://support.bagtag.com/hc/en-us/articles/4417056455185-Where-to-the-find-NFC-location-per-phone-brand).
