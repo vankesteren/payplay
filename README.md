@@ -4,7 +4,6 @@
 
 <img src="img/icon.svg" width="250px" align="right"></img>
 [![go to web app](https://img.shields.io/badge/go%20to-web%20app-blue?logo=google%20chrome&logoColor=white)](https://vankesteren.github.io/payplay)
-[![pages-build-deployment](https://github.com/vankesteren/payplay/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/vankesteren/payplay/actions/workflows/pages/pages-build-deployment)
 
 _Play with payments!_
 
